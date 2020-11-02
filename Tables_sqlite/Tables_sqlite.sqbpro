@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:\Users\Mousa\source\repos\SQL_Database\SQL_Database.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1062"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="0"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,10:mainMovies_tbl"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Customers_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="78"/><column index="3" value="75"/><column index="4" value="63"/><column index="5" value="146"/><column index="6" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Movies_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="40"/><column index="3" value="46"/><column index="4" value="60"/><column index="5" value="40"/><column index="6" value="50"/><column index="7" value="47"/><column index="8" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE &quot;Customers_tbl&quot; (
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:\Users\Mousa\source\repos\SQL_Database\SQL_Database.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1062"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="0"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,10:mainMovies_tbl"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Customers_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="78"/><column index="3" value="75"/><column index="4" value="63"/><column index="5" value="146"/><column index="6" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Movies_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="40"/><column index="3" value="46"/><column index="4" value="60"/><column index="5" value="40"/><column index="6" value="50"/><column index="7" value="47"/><column index="8" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE &quot;Customers_tbl&quot; (
 	&quot;id&quot;	INTEGER NOT NULL,
 	&quot;first_name&quot;	TEXT,
 	&quot;last_name&quot;	TEXT,
@@ -35,4 +35,27 @@ CREATE TABLE &quot;Movies_tbl&quot; (
 	&quot;number_copies&quot;	INTEGER,
 	PRIMARY KEY(&quot;id&quot;)
 );
-</sql><current_tab id="0"/></tab_sql></sqlb_project>
+
+INSERT INTO Movies_tbl (id, title, genre, director, year, actors, rating, number_copies)
+VALUES(1001, &quot;The Shawshank Redemption&quot;, &quot;drama&quot;, &quot;Frank Darabont&quot;,  1994, &quot;Tim Robbins, Morgan Freeman, Bob Gunton&quot;, 9.2, 20);
+
+INSERT INTO Movies_tbl (id, title, genre, director, year, actors, rating, number_copies)
+VALUES(1002, &quot;The Godfather&quot;, &quot;crime&quot;, &quot;Francis Ford Coppola&quot;, 1972, &quot;Marlon Brando, Al Pacino, James Caan&quot;, 9.1, 30);
+
+INSERT INTO Movies_tbl (id, title, genre, director, year, actors, rating, number_copies)
+VALUES(1003, &quot;Goodfellas&quot;, &quot;crime&quot;, &quot;Martin Scorsese&quot;, 1990, &quot;Robert De Niro, Ray Liotta, Joe Pesci&quot;, 8.6, 50);
+
+INSERT INTO Movies_tbl (id, title, genre, director, year, actors, rating, number_copies)
+VALUES(1004, &quot;The Dark Knight&quot;, &quot;superhero&quot;, &quot;Christopher Nolan&quot;, 2008, &quot;Christian Bale, Heath Ledger, Aaron Eckhart&quot;, 9.0, 50);
+ 
+INSERT INTO Movies_tbl (id, title, genre, director, year, actors, rating, number_copies)
+VALUES(1005, &quot;Inception&quot;, &quot;action&quot;, &quot;Christopher Nolan&quot;, 2010, &quot;Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page&quot;, 8.7, 35);
+
+INSERT INTO Movies_tbl (id, title, genre, director, year, actors, rating, number_copies)
+VALUES(1006, &quot;Oldboy&quot;, &quot;action&quot;, &quot;Chan-wook Park&quot;, 2003, &quot;Min-sik Choi, Ji-Tae Yoo, Hye-jeong Kang&quot;, 8.4, 25);
+
+INSERT INTO Movies_tbl (id, title, genre, director, year, actors, rating, number_copies)
+VALUES(1007, &quot;3 Idiots&quot;, &quot;comedy-drama&quot;, &quot;Rajkumar Hirani&quot;, 2009, &quot;Aamir Khan, Madhavan, Mona Singh&quot;, 8.3, 40);
+
+INSERT INTO Movies_tbl (id, title, genre, director, year, actors, rating, number_copies)
+VALUES(1008, &quot;City of God&quot;, &quot;crime&quot;, &quot;Fernando Meirelles&quot;, 2002, &quot;Alexandre Rodrigues, Leandro Firmino, Matheus Nachtergaele&quot;, 8.6, 35);</sql><current_tab id="0"/></tab_sql></sqlb_project>
