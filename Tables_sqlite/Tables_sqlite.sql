@@ -32,30 +32,30 @@ VALUES(1005, "Emma", "Taylor", 1992, "emma934@hotmail.com", "01245455");
 
 
 CREATE TABLE "Directors_tbl"(
-   "id" INT NOT NULL,
+   "directors_id" INT NOT NULL,
    "first_name" TEXT,
    "last_name"  TEXT,
-   PRIMARY KEY("id")
+   PRIMARY KEY("directors_id")
 );
-INSERT INTO Directors_tbl (id, first_name, last_name)
+INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(1, "Frank", "Darabont");
 
-INSERT INTO Directors_tbl (id, first_name, last_name)
+INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(2, "Francis Ford", "Coppola");
 
-INSERT INTO Directors_tbl (id, first_name, last_name)
+INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(3, "Martin", "Scorsese");
 
-INSERT INTO Directors_tbl (id, first_name, last_name)
+INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(4, "Christopher", "Nolan");
 
-INSERT INTO Directors_tbl (id, first_name, last_name)
+INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(5, "Chan-wook", "Park");
 
-INSERT INTO Directors_tbl (id, first_name, last_name)
+INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(6, "Rajkumar", "Hirani");
 
-INSERT INTO Directors_tbl (id, first_name, last_name)
+INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(7, "Fernando", "Meirelles");
 
 
@@ -70,7 +70,7 @@ CREATE TABLE "Movies_tbl" (
 	"rating"	REAL,
 	"number_copies"	INT,
 	PRIMARY KEY("id"),
-	FOREIGN KEY("director_id") REFERENCES Directors_tbl("id")
+	FOREIGN KEY("director_id") REFERENCES Directors_tbl("directors_id")
 );
 
 INSERT INTO Movies_tbl (id, title, genre, director_id, year, actors, rating, number_copies)

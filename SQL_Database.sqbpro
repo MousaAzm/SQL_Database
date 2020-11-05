@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:\Users\Mousa\source\repos\SQL_Database\SQL_Database.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1826"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,13:mainCustomers_tbl"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Customers_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="78"/><column index="3" value="75"/><column index="4" value="63"/><column index="5" value="146"/><column index="6" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Directors_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="78"/><column index="3" value="75"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Movies_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="170"/><column index="3" value="93"/><column index="4" value="79"/><column index="5" value="40"/><column index="6" value="300"/><column index="7" value="47"/><column index="8" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Rent_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="95"/><column index="3" value="72"/><column index="4" value="71"/><column index="5" value="74"/><column index="6" value="64"/><column index="7" value="88"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Tables_sqlite.sql">DROP TABLE IF EXISTS &quot;Rent_tbl&quot;;
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:\Users\Mousa\source\repos\SQL_Database\SQL_Database.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1826"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,13:mainCustomers_tbl"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Customers_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="78"/><column index="3" value="75"/><column index="4" value="63"/><column index="5" value="146"/><column index="6" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Directors_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="117"/><column index="2" value="170"/><column index="3" value="139"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Movies_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="170"/><column index="3" value="93"/><column index="4" value="79"/><column index="5" value="40"/><column index="6" value="300"/><column index="7" value="47"/><column index="8" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Rent_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="95"/><column index="3" value="72"/><column index="4" value="71"/><column index="5" value="74"/><column index="6" value="64"/><column index="7" value="88"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Tables_sqlite.sql">DROP TABLE IF EXISTS &quot;Rent_tbl&quot;;
 DROP TABLE IF EXISTS &quot;Customers_tbl&quot;;
 DROP TABLE IF EXISTS &quot;Movies_tbl&quot;;
 DROP TABLE IF EXISTS &quot;Directors_tbl&quot;;
@@ -15,8 +15,8 @@ CREATE TABLE &quot;Customers_tbl&quot; (
 );
 
 INSERT INTO customers_tbl (id, first_name, last_name, birthday, email_address, mobile_number)
-VALUES(1001, &quot;Daniel&quot;, &quot;Lopez&quot;, 1995, &quot;daniel45@gmail.com&quot;, &quot;01525355&quot;);
-
+VALUES(1001, &quot;Daniel&quot;, &quot;Lopez&quot;, 1995, &quot;daniel45@gmail.com&quot;, &quot;01525355&quot;);
+
 INSERT INTO customers_tbl (id, first_name, last_name, birthday, email_address, mobile_number)
 VALUES(1002, &quot;Jack&quot;, &quot;Wilson&quot;, 1996, &quot;jack532@yahoo.com&quot;, &quot;01245455&quot;);
 
@@ -32,30 +32,30 @@ VALUES(1005, &quot;Emma&quot;, &quot;Taylor&quot;, 1992, &quot;emma934@hotmail.c
 
 
 CREATE TABLE &quot;Directors_tbl&quot;(
-   &quot;id&quot; INT NOT NULL,
+   &quot;directors_id&quot; INT NOT NULL,
    &quot;first_name&quot; TEXT,
    &quot;last_name&quot;  TEXT,
-   PRIMARY KEY(&quot;id&quot;)
+   PRIMARY KEY(&quot;directors_id&quot;)
 );
-INSERT INTO Directors_tbl (id, first_name, last_name)
+INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(1, &quot;Frank&quot;, &quot;Darabont&quot;);
 
-INSERT INTO Directors_tbl (id, first_name, last_name)
+INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(2, &quot;Francis Ford&quot;, &quot;Coppola&quot;);
 
-INSERT INTO Directors_tbl (id, first_name, last_name)
+INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(3, &quot;Martin&quot;, &quot;Scorsese&quot;);
 
-INSERT INTO Directors_tbl (id, first_name, last_name)
+INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(4, &quot;Christopher&quot;, &quot;Nolan&quot;);
 
-INSERT INTO Directors_tbl (id, first_name, last_name)
+INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(5, &quot;Chan-wook&quot;, &quot;Park&quot;);
 
-INSERT INTO Directors_tbl (id, first_name, last_name)
+INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(6, &quot;Rajkumar&quot;, &quot;Hirani&quot;);
 
-INSERT INTO Directors_tbl (id, first_name, last_name)
+INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(7, &quot;Fernando&quot;, &quot;Meirelles&quot;);
 
 
@@ -70,7 +70,7 @@ CREATE TABLE &quot;Movies_tbl&quot; (
 	&quot;rating&quot;	REAL,
 	&quot;number_copies&quot;	INT,
 	PRIMARY KEY(&quot;id&quot;),
-	FOREIGN KEY(&quot;director_id&quot;) REFERENCES Directors_tbl(&quot;id&quot;)
+	FOREIGN KEY(&quot;director_id&quot;) REFERENCES Directors_tbl(&quot;directors_id&quot;)
 );
 
 INSERT INTO Movies_tbl (id, title, genre, director_id, year, actors, rating, number_copies)
@@ -116,55 +116,68 @@ CREATE TABLE &quot;Rent_tbl&quot; (
 
 -- vissa alla filmer till kund
 SELECT * FROM Movies_tbl;
+
 
 --vissa alla actions filmer
-SELECT *
-FROM Movies_tbl
-WHERE genre like &quot;action&quot;;
+SELECT * FROM Movies_tbl
+ WHERE genre like &quot;action&quot;;
 
 
 -- låna ut film till kund 
 DELETE FROM Rent_tbl
   WHERE id=1;
 INSERT INTO Rent_tbl (id, customers_id, movies_id, rent_date, return_date)
-VALUES(1001,1003, 1004, &quot;4/2&quot;, &quot;4/7&quot;);
-SELECT * FROM Rent_tbl;
+  VALUES(1001,1003, 1004, &quot;4/2&quot;, &quot;4/7&quot;);
+SELECT * FROM Rent_tbl;
+
+
 -- kunden ångrade sig och vill byta filmen
 UPDATE Rent_tbl
-  SET movies_id = 1005, customers_id = 1003 
+  SET customers_id = 1003, movies_id = 1006
   WHERE id=1;
-SELECT * FROM Rent_tbl;
-
-
--- kollar hur många kopia filmer finns 
+SELECT * FROM Rent_tbl;
 
-SELECT id,title, genre, number_copies
+
+-- kollar hur många kopia av filmer finss
+SELECT id,title, genre, number_copies
   FROM Movies_tbl;
--- ändra antal kopia för den filmen som har lånat ut  
-UPDATE Movies_tbl
-  SET number_copies = 34
-  WHERE id=1005;
-SELECT id,title, genre, number_copies
- FROM Movies_tbl;
+  
+  
+-- ändra antal kopia för den filmen som har lånat ut  
+UPDATE Movies_tbl
+  SET number_copies = 34
+  WHERE id=1005;
+SELECT id,title, genre, number_copies
+  FROM Movies_tbl;
 
--- ändra columns namn 
-ALTER TABLE Movies_tbl RENAME COLUMN number_copies to copies;
-SELECT id,title, copies
-FROM Movies_tbl;
+
+-- ändra columns namn 
+ALTER TABLE Movies_tbl RENAME COLUMN number_copies to copies;
+SELECT id,title, copies
+ FROM Movies_tbl;
 
--- vissa alla filmer med rating mellan 8.0 - 9.0
-SELECT * 
+
+ 
+-- vissa alla filmer med rating mellan 8.5 - 9.0
+SELECT * 
+ FROM Movies_tbl
+WHERE rating BETWEEN 8.5 AND 9.0;
+
+
+
+-- vissa filmers namn som börjar med T
+SELECT title 
+ FROM Movies_tbl
+WHERE title LIKE 'T%';
+
+
+
+-- vissa filmers namn directors förnamn/efternamn med rating som är större än 8.5
+SELECT title, first_name, last_name, rating
  FROM Movies_tbl
-WHERE rating BETWEEN 8.0 AND 9.0;
-
-
--- vissa filmers namn som börjar med T
-SELECT title 
-FROM Movies_tbl
-WHERE title LIKE 'T%';
-
-
-
-
-
+INNER JOIN Directors_tbl 
+ON Directors_tbl.directors_id = Movies_tbl.director_id
+ WHERE rating &gt;= 8.7;
+
+
 </sql><current_tab id="1"/></tab_sql></sqlb_project>
