@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:\Users\Mousa\source\repos\SQL_Database\SQL_Database.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1826"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,13:mainCustomers_tbl"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Customers_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="78"/><column index="3" value="75"/><column index="4" value="63"/><column index="5" value="146"/><column index="6" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Directors_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="117"/><column index="2" value="170"/><column index="3" value="139"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Movies_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="170"/><column index="3" value="93"/><column index="4" value="79"/><column index="5" value="40"/><column index="6" value="300"/><column index="7" value="47"/><column index="8" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Rent_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="95"/><column index="3" value="72"/><column index="4" value="71"/><column index="5" value="74"/><column index="6" value="64"/><column index="7" value="88"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Tables_sqlite.sql">DROP TABLE IF EXISTS &quot;Rent_tbl&quot;;
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:\Users\Mousa\source\repos\SQL_Database\SQL_Database.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1826"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,10:mainActors_tbl"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Actors_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="69"/><column index="2" value="174"/><column index="3" value="202"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Customers_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="78"/><column index="3" value="75"/><column index="4" value="63"/><column index="5" value="146"/><column index="6" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Directors_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="117"/><column index="2" value="170"/><column index="3" value="139"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Movies_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="1" mode="1"/></sort><column_widths><column index="1" value="127"/><column index="2" value="170"/><column index="3" value="93"/><column index="4" value="79"/><column index="5" value="73"/><column index="6" value="81"/><column index="7" value="92"/><column index="8" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Rent_tbl" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="40"/><column index="2" value="95"/><column index="3" value="72"/><column index="4" value="71"/><column index="5" value="74"/><column index="6" value="64"/><column index="7" value="88"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Tables_sqlite.sql">DROP TABLE IF EXISTS &quot;Rent_tbl&quot;;
 DROP TABLE IF EXISTS &quot;Customers_tbl&quot;;
 DROP TABLE IF EXISTS &quot;Movies_tbl&quot;;
 DROP TABLE IF EXISTS &quot;Directors_tbl&quot;;
+DROP TABLE IF EXISTS &quot;Actors_tbl&quot;;
 
 
 CREATE TABLE &quot;Customers_tbl&quot; (
@@ -15,8 +16,8 @@ CREATE TABLE &quot;Customers_tbl&quot; (
 );
 
 INSERT INTO customers_tbl (id, first_name, last_name, birthday, email_address, mobile_number)
-VALUES(1001, &quot;Daniel&quot;, &quot;Lopez&quot;, 1995, &quot;daniel45@gmail.com&quot;, &quot;01525355&quot;);
-
+VALUES(1001, &quot;Daniel&quot;, &quot;Lopez&quot;, 1995, &quot;daniel45@gmail.com&quot;, &quot;01525355&quot;);
+
 INSERT INTO customers_tbl (id, first_name, last_name, birthday, email_address, mobile_number)
 VALUES(1002, &quot;Jack&quot;, &quot;Wilson&quot;, 1996, &quot;jack532@yahoo.com&quot;, &quot;01245455&quot;);
 
@@ -37,6 +38,8 @@ CREATE TABLE &quot;Directors_tbl&quot;(
    &quot;last_name&quot;  TEXT,
    PRIMARY KEY(&quot;directors_id&quot;)
 );
+
+
 INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(1, &quot;Frank&quot;, &quot;Darabont&quot;);
 
@@ -59,43 +62,78 @@ INSERT INTO Directors_tbl (directors_id, first_name, last_name)
 VALUES(7, &quot;Fernando&quot;, &quot;Meirelles&quot;);
 
 
+CREATE TABLE &quot;Actors_tbl&quot;(
+   &quot;actors_id&quot; INT NOT NULL,
+   &quot;first_name&quot; TEXT,
+   &quot;last_name&quot;  TEXT,
+   PRIMARY KEY(&quot;actors_id&quot;)
+);
 
+INSERT INTO Actors_tbl (actors_id, first_name, last_name)
+VALUES(01, &quot;Tim , Morgan ,  Bob&quot;, &quot;Robbins,  Freeman, Gunton&quot; );
+
+INSERT INTO Actors_tbl (actors_id, first_name, last_name)
+VALUES(02, &quot;Marlon , Al, James&quot;, &quot; Brando,  Pacino,  Caan&quot; );
+
+INSERT INTO Actors_tbl (actors_id, first_name, last_name)
+VALUES(03, &quot;Robert, Ray, Joe &quot;,&quot;De Niro, Liotta, Pesci&quot;);
+
+INSERT INTO Actors_tbl (actors_id, first_name, last_name)
+VALUES(04,&quot;Christian, Heath,Aaron&quot;, &quot; Bale, Ledger, Eckhart&quot;);
+
+INSERT INTO Actors_tbl (actors_id, first_name, last_name)
+VALUES(05,&quot;Leonardo, Joseph, Ellen&quot; , &quot; DiCaprio, Gordon-Levitt, Page&quot;);
+
+INSERT INTO Actors_tbl (actors_id, first_name, last_name)
+VALUES(06,&quot;Min-sik ,Ji-Tae, Hye-jeong&quot;, &quot;Choi, Yoo, Kang&quot;);
+
+INSERT INTO Actors_tbl (actors_id, first_name, last_name)
+VALUES(07, &quot;Aamir , Mad, Mona&quot;, &quot; Khan,havan, Singh&quot;);
+
+INSERT INTO Actors_tbl (actors_id, first_name, last_name)
+VALUES(08,&quot;Alexandre, Leandro, Matheus&quot;, &quot; Rodrigues, Firmino, Nachtergaele&quot;);
+
+
+
+
+ 
 CREATE TABLE &quot;Movies_tbl&quot; (
 	&quot;id&quot;	INT NOT NULL,
 	&quot;title&quot;	TEXT,
 	&quot;genre&quot;	TEXT,
 	&quot;director_id&quot; INT NOT NULL,
 	&quot;year&quot;	INT,
-	&quot;actors&quot;	TEXT,
+	&quot;actor_id&quot;	INT NOT NULL,
 	&quot;rating&quot;	REAL,
 	&quot;number_copies&quot;	INT,
 	PRIMARY KEY(&quot;id&quot;),
-	FOREIGN KEY(&quot;director_id&quot;) REFERENCES Directors_tbl(&quot;directors_id&quot;)
+	FOREIGN KEY(&quot;director_id&quot;) REFERENCES Directors_tbl(&quot;directors_id&quot;),
+	FOREIGN KEY(&quot;actor_id&quot;) REFERENCES Actors_tbl(&quot;actors_id&quot;)
 );
 
-INSERT INTO Movies_tbl (id, title, genre, director_id, year, actors, rating, number_copies)
-VALUES(1001, &quot;The Shawshank Redemption&quot;, &quot;drama&quot;, 1,  1994, &quot;Tim Robbins, Morgan Freeman, Bob Gunton&quot;, 9.2, 20);
+INSERT INTO Movies_tbl (id, title, genre, director_id, year, actor_id, rating, number_copies)
+VALUES(1001, &quot;The Shawshank Redemption&quot;, &quot;drama&quot;, 1, 1994, 01, 9.2, 20);
 
-INSERT INTO Movies_tbl (id, title, genre, director_id, year, actors, rating, number_copies)
-VALUES(1002, &quot;The Godfather&quot;, &quot;crime&quot;, 2, 1972, &quot;Marlon Brando, Al Pacino, James Caan&quot;, 9.1, 30);
+INSERT INTO Movies_tbl (id, title, genre, director_id, year, actor_id, rating, number_copies)
+VALUES(1002, &quot;The Godfather&quot;, &quot;crime&quot;, 2, 1972, 02, 9.1, 30);
 
-INSERT INTO Movies_tbl (id, title, genre, director_id, year, actors, rating, number_copies)
-VALUES(1003, &quot;Goodfellas&quot;, &quot;crime&quot;, 3, 1990, &quot;Robert De Niro, Ray Liotta, Joe Pesci&quot;, 8.6, 50);
+INSERT INTO Movies_tbl (id, title, genre, director_id, year, actor_id, rating, number_copies)
+VALUES(1003, &quot;Goodfellas&quot;, &quot;crime&quot;, 3, 1990, 03, 8.6, 50);
 
-INSERT INTO Movies_tbl (id, title, genre, director_id, year, actors, rating, number_copies)
-VALUES(1004, &quot;The Dark Knight&quot;, &quot;superhero&quot;, 4, 2008, &quot;Christian Bale, Heath Ledger, Aaron Eckhart&quot;, 9.0, 50);
+INSERT INTO Movies_tbl (id, title, genre, director_id, year, actor_id, rating, number_copies)
+VALUES(1004, &quot;The Dark Knight&quot;, &quot;superhero&quot;, 4, 2008, 04, 9.0, 50);
  
-INSERT INTO Movies_tbl (id, title, genre, director_id, year, actors, rating, number_copies)
-VALUES(1005, &quot;Inception&quot;, &quot;action&quot;, 4, 2010, &quot;Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page&quot;, 8.7, 35);
+INSERT INTO Movies_tbl (id, title, genre, director_id, year, actor_id, rating, number_copies)
+VALUES(1005, &quot;Inception&quot;, &quot;action&quot;, 4, 2010, 05, 8.7, 35);
 
-INSERT INTO Movies_tbl (id, title, genre, director_id, year, actors, rating, number_copies)
-VALUES(1006, &quot;Oldboy&quot;, &quot;action&quot;, 5, 2003, &quot;Min-sik Choi, Ji-Tae Yoo, Hye-jeong Kang&quot;, 8.4, 25);
+INSERT INTO Movies_tbl (id, title, genre, director_id, year, actor_id, rating, number_copies)
+VALUES(1006, &quot;Oldboy&quot;, &quot;action&quot;, 5, 2003, 06, 8.4, 25);
 
-INSERT INTO Movies_tbl (id, title, genre, director_id, year, actors, rating, number_copies)
-VALUES(1007, &quot;3 Idiots&quot;, &quot;comedy-drama&quot;, 6, 2009, &quot;Aamir Khan, Madhavan, Mona Singh&quot;, 8.3, 40);
+INSERT INTO Movies_tbl (id, title, genre, director_id, year, actor_id, rating, number_copies)
+VALUES(1007, &quot;3 Idiots&quot;, &quot;comedy-drama&quot;, 6, 2009, 07, 8.3, 40);
 
-INSERT INTO Movies_tbl (id, title, genre, director_id, year, actors, rating, number_copies)
-VALUES(1008, &quot;City of God&quot;, &quot;crime&quot;, 7, 2002, &quot;Alexandre Rodrigues, Leandro Firmino, Matheus Nachtergaele&quot;, 8.6, 35);
+INSERT INTO Movies_tbl (id, title, genre, director_id, year, actor_id, rating, number_copies)
+VALUES(1008, &quot;City of God&quot;, &quot;crime&quot;, 7, 2002, 08, 8.6, 35);
 
 
 
@@ -116,7 +154,7 @@ CREATE TABLE &quot;Rent_tbl&quot; (
 
 -- vissa alla filmer till kund
 SELECT * FROM Movies_tbl;
-
+
 
 --vissa alla actions filmer
 SELECT * FROM Movies_tbl
@@ -128,20 +166,20 @@ DELETE FROM Rent_tbl
   WHERE id=1;
 INSERT INTO Rent_tbl (id, customers_id, movies_id, rent_date, return_date)
   VALUES(1001,1003, 1004, &quot;4/2&quot;, &quot;4/7&quot;);
-SELECT * FROM Rent_tbl;
-
+SELECT * FROM Rent_tbl;
+
 
 -- kunden ångrade sig och vill byta filmen
 UPDATE Rent_tbl
   SET customers_id = 1003, movies_id = 1006
   WHERE id=1;
-SELECT * FROM Rent_tbl;
-
+SELECT * FROM Rent_tbl;
+
 
 -- kollar hur många kopia av filmer finss
 SELECT id,title, genre, number_copies
-  FROM Movies_tbl;
-  
+  FROM Movies_tbl;
+  
   
 -- ändra antal kopia för den filmen som har lånat ut  
 UPDATE Movies_tbl
@@ -149,35 +187,35 @@ UPDATE Movies_tbl
   WHERE id=1005;
 SELECT id,title, genre, number_copies
   FROM Movies_tbl;
-
+
 
 -- ändra columns namn 
 ALTER TABLE Movies_tbl RENAME COLUMN number_copies to copies;
 SELECT id,title, copies
  FROM Movies_tbl;
-
-
+
+
  
 -- vissa alla filmer med rating mellan 8.5 - 9.0
 SELECT * 
  FROM Movies_tbl
 WHERE rating BETWEEN 8.5 AND 9.0;
 
-
+
 
 -- vissa filmers namn som börjar med T
 SELECT title 
  FROM Movies_tbl
 WHERE title LIKE 'T%';
-
-
+
+
 
 -- vissa filmers namn directors förnamn/efternamn med rating som är större än 8.5
-SELECT title, first_name, last_name, rating
- FROM Movies_tbl
-INNER JOIN Directors_tbl 
-ON Directors_tbl.directors_id = Movies_tbl.director_id
+SELECT title, first_name, last_name, rating
+ FROM Movies_tbl
+INNER JOIN Directors_tbl 
+ON Directors_tbl.directors_id = Movies_tbl.director_id
  WHERE rating &gt;= 8.7;
 
 
-</sql><current_tab id="1"/></tab_sql></sqlb_project>
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
